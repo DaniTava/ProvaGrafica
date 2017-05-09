@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package grafica;
 
 import java.awt.BorderLayout;
@@ -13,12 +9,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
-/**
- *
- * @author cl427862
- */
-public class ExecutePage extends JFrame {
-    
+public class ExecutePage extends JFrame 
+{
     public ExecutePage(String s)
     {
         super(s);
@@ -39,12 +31,10 @@ public class ExecutePage extends JFrame {
         ArrayList<String> array=new ArrayList();
         array.add("1");array.add("2");array.add("3");array.add("4");array.add("5");
         
-        
         pannello.add(bb,BorderLayout.EAST);
         pannello.add(nb,BorderLayout.WEST);
         pannello.add(hb,BorderLayout.CENTER);
         pannello.add(insertRadioButtonS(5,array),BorderLayout.SOUTH);
-        
         
         setContentPane(pannello);
         pack();
@@ -69,7 +59,5 @@ public class ExecutePage extends JFrame {
         }
         
         return pannello;
-    }
-    
-    
+    } 
 }
